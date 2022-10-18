@@ -1,0 +1,361 @@
+
+/* STYLE SHEET FOR "FAUX FOODIES" WEBSITE -- ISABEL RÍOS */ 
+
+/*----------------------------------------*/
+
+/*  FONTS:
+    font-family: 'Monofett', cursive; - Main Title
+    font-family: 'Nunito', sans-serif; - Paragraphs
+    font-family: 'Paytone One', sans-serif; - Titles */
+
+/*----------------------------------------*/
+                
+/* FLEXBOX STYLE 
+
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    align-items: center;
+    
+}
+
+.flexbox-item{
+    width: 300px;
+    margin: 10px;
+    background-color: red;
+
+}
+
+.flexbox-item-1{
+    min-height: 100px;
+    min-width: 300px;
+}
+
+.flexbox-item-2{
+    min-height: 100px;
+}
+
+.flexbox-item-3{
+    min-height: 400px;
+}
+*/
+
+/* Flip Card taken from W3 Schools */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    border: 1px solid white;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: white;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotateY(180deg);
+  }
+/*----------------------------------------*/
+
+/* GRID STYLE */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:repeat(6,1fr);
+    grid-template-rows: minmax(200px, auto);
+    column-gap: 30px;
+    row-gap: 60px;    
+    align-items: start;
+}
+
+.grid-item{
+    background-color: none;
+}
+
+/*index*/
+.grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /*border:3px solid blue;*/
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    /*border:3px solid purple;*/
+
+}
+
+.grid-item-3 {
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+   /* border:3px solid red;*/
+}
+
+.grid-item-4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /*border:3px solid blue;*/
+
+}
+
+.grid-item-5{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    /*border:3px solid purple;*/
+
+
+}
+
+.grid-item-6{
+  grid-column-start: 6;
+  grid-column-end:-1;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+  /*border:3px solid blue;*/
+}
+
+
+.grid-item-7{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /*border:3px solid red;*/
+}
+
+
+.grid-item-8{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  /*border:3px solid blue;*/
+}
+
+.grid-item-9{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  /*border:3px solid red;*/
+}
+
+/*.grid-item-10{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  border:3px solid blue;
+}
+*/
+
+
+.grid-item-11{
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    /*border:3px solid red;*/
+
+}
+
+.grid-item-12{
+  grid-column-start: 6;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  /*border:3px solid blue;*/
+
+}
+
+.grid-item-13{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    /*border:3px solid red;*/
+    
+    }
+
+.grid-item-14{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    /*border:3px solid blue; */
+}
+
+
+.grid-item-15{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    /*border:3px solid red;*/
+}
+
+.grid-item-16{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    /*border:3px solid blue; */
+}
+
+
+.grid-item-17{
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    /*border:3px solid red;*/
+}
+
+.grid-item-18{
+    grid-column-start: 6;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+   /* border:3px solid blue; */
+}
+
+
+.grid-item-19{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start:5;
+    grid-row-end: 5; 
+    border:3px solid red;
+}
+
+.grid-item-20{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+    border:3px solid blue; 
+}
+
+
+.grid-item-21{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+    /*border:3px solid red;*/
+}
+
+.grid-item-22{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    border:3px solid blue; 
+}
+
+
+.grid-item-23{
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    border:3px solid red;
+}
+
+.grid-item-24{
+    grid-column-start: 6;
+    grid-column-end: -1;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    border:3px solid blue; 
+}
+
+
+
+
+/*----------------------------------------*/
+
+/* GENERAL STYLE */
+
+@font-face {
+    font-family: medivalFont;
+    src: url(HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf);
+  }
+
+body{
+    transition: background-color .5s;
+}
+
+
+h1{
+    font-family: medivalFont;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+    color: black;
+    letter-spacing: 0px;
+
+}
+
+h2{
+    font-size: 16px;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
